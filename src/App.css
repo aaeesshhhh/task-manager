@@ -1,0 +1,64 @@
+.project-container {
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.project-container h1.heading {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+.task-wrapper {
+  display: flex;
+  gap: 5rem;
+}
+.task-category {
+  display: flex;
+  flex-direction: column;
+  min-width: 10rem;
+}
+.task-header {
+  display: flex;
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+h3.not-completed{
+  background-color: rgb(246, 178, 178);
+  font-size:1.3rem
+
+}
+
+h3.progress{
+  background-color: rgb(255, 255, 143);
+  font-size:1.3rem
+}
+h3.completed{
+  background-color: rgb(168, 255, 168);
+  font-size:1.3rem;
+}
+Button{
+  width: 8rem;
+  height: 3rem;
+  font-size:6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .task-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .task-category {
+    min-width: auto;
+  }
+
+  .task-category button {
+    width: 100%;
+  }
+}
